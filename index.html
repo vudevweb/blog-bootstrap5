@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- SEO -->
+     <title>VuDevWeb</title>
+     <meta name="description"
+          content="Để tối ưu hóa chuẩn SEO cho website, chúng ta không thể không chú trọng đến việc tối ưa cho các thẻ HTML.">
+     <meta name="keywords" content="tối ưu hóa chuẩn seo, tối ưu hóa seo, tối ưu hóa, seo">
+     <meta property="og:locale" content="vi_VN">
+     <meta property="og:type" content="article">
+     <meta property="og:url" content="https://saigonhitech.vn/toi-uu-hoa-chuan-seo-cac-the-trong-html-652-27.html">
+     <meta property="og:title" content="Tối ưu hóa chuẩn SEO các thẻ trong HTML">
+     <meta property="og:description"
+          content="Để tối ưu hóa chuẩn SEO cho website, chúng ta không thể không chú trọng đến việc tối ưa cho các thẻ HTML.">
+     <meta property="og:site_name" content="Saigon Hitech">
+     <meta property="og:image:alt" content="Tối ưu hóa chuẩn SEO các thẻ trong HTML">
+     <meta name="twitter:card" content="summary">
+     <meta name="twitter:title" content="Tối ưu hóa chuẩn SEO các thẻ trong HTML">
+     <meta name="twitter:description"
+          content="Để tối ưu hóa chuẩn SEO cho website, chúng ta không thể không chú trọng đến việc tối ưa cho các thẻ HTML.">
+     <meta name="twitter:image:alt" content="Tối ưu hóa chuẩn SEO các thẻ trong HTML">
+     <meta name="twitter:image" content="/assets/images/logo/logo_vd.svg">
+     <meta property="og:image" content="/assets/images/logo/logo_vd.svg">
+     <!-- END SEO -->
+
+     <link href="/assets/css/my_cus.css" rel="stylesheet">
+     <link href="/assets/images/logo/logo_vd.svg" type="image/x-icon" rel="shortcut icon">
+     <!-- Libs CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+     <link href="/assets/fonts/feather/feather.css" rel="stylesheet">
+     <link href="/assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+     <link href="/assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+     <link href="/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+     <link href="/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+     <!-- Theme CSS -->
+     <link rel="stylesheet" href="/assets/css/theme.min.css">
+     <link href="/assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="/assets/libs/tiny-slider/dist/tiny-slider.css">
+
+     <link rel="stylesheet" href="/assets/custom/style.css">
+
+</head>
+
+<body>
+     <!-- header -->
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNAVBAR" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-2">
+                    <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Docs</a>
+                    </li>
+
+               </ul>
+               <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+               </form>
+          </div>
+     </div>
+     <nav class="navbar navbar-expand-lg NavBar_wrapper__4m3K5">
+          <!-- Button -->
+          <div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNAVBAR"
+                    aria-controls="offcanvasNAVBAR">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+          </div>
+          <div class="NavBar_logo__Rgo-5">
+               <a class="navbar-brand" href="index.html"><img src="/assets/images/logo/logo_vd.svg" alt=""
+                         class="rounded" width=38></a>
+               <span>VuDevWeb</span>
+          </div>
+          <div class="NavBar_body__4Yhth d-flex-center">
+               <div>
+                    <div class="Search_wrapper__Bwvae d-flex-center" aria-expanded="false">
+                         <div class="Search_searchIcon__-23JY"></div>
+                         <input class="Search_input__GnMba" spellcheck="false"
+                              placeholder="Tìm kiếm khóa học, bài viết, video, ..." value="">
+                    </div>
+               </div>
+          </div>
+
+          <div class="NavBar_actions__nSNzo">
+               <div class="ms-auto d-flex align-items-center order-lg-3">
+                    <ul class="navbar-nav navbar-right-wrap mx-2 flex-row">
+                         <li class="dropdown d-inline-block stopevent position-static">
+                              <a class="btn btn-light btn-icon rounded-circle text-muted indicator indicator-primary"
+                                   href="#" role="button" id="dropdownNotificationSecond" data-bs-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                   <i class="fe fe-bell"> </i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg position-absolute mx-3 my-5"
+                                   aria-labelledby="dropdownNotificationSecond">
+                                   <div>
+                                        <div
+                                             class="border-bottom px-3 pb-3 d-flex justify-content-between align-items-center">
+                                             <span class="h5 mb-0">Thông báo</span>
+                                             <a href="# " class="text-muted"><span class="align-middle"><i
+                                                            class="fe fe-settings me-1"></i></span></a>
+                                        </div>
+                                        <ul class="list-group list-group-flush  " style="height: 300px;" data-simplebar>
+                                             <li class="list-group-item bg-light">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-1.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Kristin Watson:</h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                Krisitn Watsan like your comment on
+                                                                                course
+                                                                                Javascript Introduction!
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-thumbs-up text-success me-1"></span>2
+                                                                                     hours ago,</span>
+                                                                                <span class="ms-1">2:19 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+
+                                                            <a href="#" class="badge-dot bg-info" class="icon_news"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as read">
+                                                            </a>
+                                                            <div>
+                                                                 <a href="#" class="bg-transparent" class="icon_news"
+                                                                      data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                      title="Remove">
+                                                                      <i class="fe fe-x text-muted"></i>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-2.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Brooklyn Simmons
+                                                                           </h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                Just launched a new Courses React for
+                                                                                Beginner.
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                     9,</span>
+                                                                                <span class="ms-1">1:20 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+                                                            <a href="#" class="badge-dot bg-secondary" class="icon_news"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as unread">
+                                                            </a>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-3.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Jenny Wilson</h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                Krisitn Watsan like your comment on
+                                                                                course
+                                                                                Javascript Introduction!
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-thumbs-up text-info me-1"></span>Oct
+                                                                                     9,</span>
+                                                                                <span class="ms-1">1:56 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+                                                            <a href="#" class="badge-dot bg-secondary" class="icon_news"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as unread">
+                                                            </a>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-4.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Sina Ray</h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                You earn new certificate for complete
+                                                                                the Javascript
+                                                                                Beginner course.
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-award text-warning me-1"></span>Oct
+                                                                                     9,</span>
+                                                                                <span class="ms-1">1:56 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+                                                            <a href="#" class="badge-dot bg-secondary" class="icon_news"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as unread">
+                                                            </a>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                        </ul>
+                                        <div class="border-top px-3 pt-3 pb-0">
+                                             <a href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/notification-history.html"
+                                                  class="text-link fw-semibold">See
+                                                  all Notifications</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+
+                         <li class="dropdown ms-2 d-inline-block position-static">
+                              <a class="rounded-circle" href="#" data-bs-toggle="dropdown" data-bs-display="static"
+                                   aria-expanded="false">
+                                   <div class="avatar avatar-md avatar-indicators avatar-online">
+                                        <img alt="avatar" src="/assets/images/avatar/avatar-1.jpg"
+                                             class="rounded-circle">
+                                   </div>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end position-absolute mx-3 my-5">
+                                   <div class="dropdown-item">
+                                        <div class="d-flex">
+                                             <div class="avatar avatar-md avatar-indicators avatar-online">
+                                                  <img alt="avatar" src="/assets/images/avatar/avatar-1.jpg"
+                                                       class="rounded-circle">
+                                             </div>
+                                             <div class="ms-3 lh-1">
+                                                  <h5 class="mb-1">Annette Black</h5>
+                                                  <p class="mb-0 text-muted">annette@geeksui.com</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="dropdown-divider"></div>
+                                   <ul class="list-unstyled">
+                                        <li class="dropdown-submenu dropstart-lg">
+                                             <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                                  <i class="fe fe-circle me-2"></i>Status
+                                             </a>
+                                             <ul class="dropdown-menu">
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-success me-2"></span>Online
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-secondary me-2"></span>Offline
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-warning me-2"></span>Away
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-danger me-2"></span>Busy
+                                                       </a>
+                                                  </li>
+                                             </ul>
+                                        </li>
+                                        <li>
+                                             <a class="dropdown-item" href="pages/profile-edit.html">
+                                                  <i class="fe fe-user me-2"></i>Profile
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a class="dropdown-item" href="pages/student-subscriptions.html">
+                                                  <i class="fe fe-star me-2"></i>Subscription
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a class="dropdown-item" href="#">
+                                                  <i class="fe fe-settings me-2"></i>Settings
+                                             </a>
+                                        </li>
+                                   </ul>
+                                   <div class="dropdown-divider"></div>
+                                   <ul class="list-unstyled">
+                                        <li>
+                                             <a class="dropdown-item" href="index.html">
+                                                  <i class="fe fe-power me-2"></i>Sign Out
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </li>
+                    </ul>
+
+               </div>
+          </div>
+
+     </nav>
+
+     <!-- end header -->
+
+
+     <div class="main_all">
+          <!-- header -->
+          <div class="App_sidebarWrap__3LwsB shadow" style="background-color:#FFFFFF;">
+               <div class="Sidebar_wrapper__kUJFm" id="sidebar">
+                    <ul class="Sidebar_list__HnCzM">
+                         <li>
+                              <a aria-current="page" class="Sidebar_itemBtn__Q78b7 active" href="/">
+                                   <i class="fe fe-home icon_sidebar"></i>
+                                   <span>Trang chủ</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a class="Sidebar_itemBtn__Q78b7" href="/Thể thao">
+                                   <i class="bi bi-newspaper icon_sidebar"></i>
+                                   <span>Thể thao</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a class="Sidebar_itemBtn__Q78b7" href="/me/stored/courses">
+                                   <i class="bi bi-newspaper icon_sidebar"></i>
+                                   <span>Chính trị</span>
+                              </a>
+                         </li>
+
+                         <li>
+                              <a class="Sidebar_itemBtn__Q78b7" href="/blog">
+                                   <i class="bi bi-archive-fill icon_sidebar"></i>
+                                   <span>Giải trí</span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+          <!-- end sidebar -->
+
+          <!-- content -->
+          <article class="App_withSidebarContent__o4VlQ">
+               <div class="container-fluid mt-3">
+
+                    <!-- banner -->
+                    <div class="row mb-5">
+                         <div class="col-12 col-lg-8">
+                              <div id="carouselExampleDark" class="carousel slide carousel-fade"
+                                   data-bs-ride="carousel">
+                                   <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                             class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                             aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                             aria-label="Slide 3"></button>
+                                   </div>
+
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="3000">
+                                             <div class="shadow_new_banner">
+                                                  <img src="/assets/post/real.jfif" class="d-block w-100" alt="...">
+                                             </div>
+                                             <a href="#" class="carousel-caption text-start">
+                                                  <span class="badge bg-danger animate__animated animate__fadeInUp">Thể
+                                                       thao</span>
+                                                  <h1 class="animate__animated animate__fadeInUp title_new_banner">Real
+                                                       Madrid sở hữu bản năng sinh tồn vô đối tại Champions League</h1>
+                                                  <p class="animate__animated animate__fadeInUp">
+                                                       <i class="fe fe-user"></i>VuDevWeb &nbsp;
+                                                       <i class="fe fe-calendar"></i> 24-4-2024 &nbsp;
+                                                       <i class="fe fe-eye"></i> 7.623
+                                                  </p>
+                                             </a>
+                                        </div>
+
+                                        <div class="carousel-item" data-bs-interval="3000">
+                                             <div class="shadow_new_banner">
+                                                  <img src="/assets/post/ronaldo.jpg" class="d-block w-100" alt="...">
+                                             </div>
+                                             <a href="#" class="carousel-caption text-start">
+                                                  <span class="badge bg-danger animate__animated animate__fadeInUp">Thể
+                                                       thao</span>
+                                                  <h1 class="animate__animated animate__fadeInUp title_new_banner">
+                                                       Ronaldo “ăn đủ” nhờ thắng kiện Juventus</h1>
+                                                  <p class="animate__animated animate__fadeInUp">
+                                                       <i class="fe fe-user"></i>VuDevWeb &nbsp;
+                                                       <i class="fe fe-calendar"></i> 24-4-2024 &nbsp;
+                                                       <i class="fe fe-eye"></i> 7.623
+                                                  </p>
+                                             </a>
+                                        </div>
+
+                                        <div class="carousel-item" data-bs-interval="3000">
+                                             <div class="shadow_new_banner">
+                                                  <img src="/assets/post//lewan.jpg" class="d-block w-100 " alt="...">
+                                             </div>
+                                             <a href="#" class="carousel-caption text-start">
+                                                  <span class="badge bg-danger animate__animated animate__fadeInUp">Thể
+                                                       thao</span>
+                                                  <h1 class="animate__animated animate__fadeInUp title_new_banner">
+                                                       Lewandowski tuyên bố mạnh mẽ trước trận El Clasico với Real
+                                                       Madrid</h1>
+                                                  <p class="animate__animated animate__fadeInUp">
+                                                       <i class="fe fe-user"></i>VuDevWeb &nbsp;
+                                                       <i class="fe fe-calendar"></i> 24-4-2024 &nbsp;
+                                                       <i class="fe fe-eye"></i> 7.623
+                                                  </p>
+                                             </a>
+                                        </div>
+
+                                   </div>
+
+                                   <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                   </button>
+                                   <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                   </button>
+                              </div>
+                         </div>
+
+                         <div class="col-lg-4 d-none d-lg-block" style="padding-left: 0%;">
+
+                              <div class="" style="position: relative; ">
+                                   <div class="shadow_new_banner"
+                                        style="border-bottom-left-radius:0 !important; border-bottom-right-radius:0 !important;">
+                                        <img src="/assets/post/thegioi.jpg" class="d-block w-100 " alt="...">
+                                   </div>
+                                   <a href="#" class="carousel-caption_vd d-md-block text-start">
+                                        <span class="badge bg-danger animate__animated animate__fadeInUp">Quân
+                                             sự</span>
+                                        <h1 class="animate__animated animate__fadeInUp title_new_banner">Mỹ duyệt dự
+                                             luật viện trợ cho Tel Aviv, Israel và Hezbollah giao tranh dữ dội</h1>
+                                        <p class="animate__animated animate__fadeInUp">
+                                             <i class="fe fe-user"></i>VuDevWeb &nbsp;
+                                             <i class="fe fe-calendar"></i> 24-4-2024 &nbsp;
+                                             <i class="fe fe-eye"></i> 7.623
+                                        </p>
+                                   </a>
+                              </div>
+
+                              <div class="" style="position: relative;">
+                                   <div class="shadow_new_banner"
+                                        style="border-top-left-radius:0 !important; border-top-right-radius:0 !important;">
+                                        <img src="/assets/post/mu.jpg" class="d-block w-100 " alt="...">
+                                   </div>
+                                   <a href="#" class="carousel-caption_vd d-md-block text-start">
+                                        <span class="badge bg-danger animate__animated animate__fadeInUp">Thể
+                                             thao</span>
+                                        <h1 class="animate__animated animate__fadeInUp title_new_banner">Erik ten Hag
+                                             tuyên bố về MU gây giật mình, giữa nguy cơ bị sa thải</h1>
+                                        <p class="animate__animated animate__fadeInUp">
+                                             <i class="fe fe-user"></i>VuDevWeb &nbsp;
+                                             <i class="fe fe-calendar"></i> 24-4-2024 &nbsp;
+                                             <i class="fe fe-eye"></i> 7.623
+                                        </p>
+                                   </a>
+                              </div>
+
+                         </div>
+                    </div>
+                    <!-- end banner -->
+
+                    <!-- content -->
+                    <div class="row mb-3">
+                         <!-- bài viết -->
+                         <div class="col-12 col-lg-8">
+                              <div class="card">
+                                   <div class="card-header" style="border-bottom: none;">
+                                        <div class="blog-posts-title title-wrap">
+                                             <h2 class="title">Có gì mới</h2><a class="more" href="#">Xem thêm</a>
+                                        </div>
+                                   </div>
+                                   <div class="card-body" style="padding-top: 0 !important;">
+                                        <!-- bài viết -->
+                                        <div class="px-4">
+                                             <div class="card mb-4 card-hover ">
+                                                  <div class="row">
+                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
+                                                            style="background-image: url(https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA);"
+                                                            href="#">
+                                                       </a>
+                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
+                                                            <!-- Card Body -->
+                                                            <div class="card-body">
+                                                                 <a href="#"
+                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thể
+                                                                      thao</a>
+                                                                 <h3 class="mb-2  "><a href="#"
+                                                                           class="text-inherit title_news">Giáo viên Mỹ
+                                                                           gốc Việt lần đầu thử thách 21km ở giải chạy
+                                                                           VM Huế</a></h3>
+                                                                 <p>
+                                                                      Lauren Thị Hudson chưa từng tham gia giải chạy nào
+                                                                      nhưng vẫn quyết tâm thử sức với cự ly half
+                                                                      marathon của VM Huế, đặt mục tiêu về đích trong
+                                                                      top 20......
+                                                                 </p>
+
+                                                                 <div
+                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
+                                                                      <div class="d-flex-center gap-2">
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Tác giả"><i
+                                                                                     class="fe fe-user "></i>
+                                                                                VuDevWeb</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Ngày đăng"><i
+                                                                                     class="fe fe-calendar "></i>
+                                                                                24-4-2024</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Lượt xem"><i
+                                                                                     class="fe fe-eye "></i>
+                                                                                7.274</span>
+                                                                      </div>
+                                                                      <div class="">
+                                                                           <a href="#" class="text-muted bookmark">
+                                                                                <i class="fe fe-bookmark"></i>
+                                                                           </a>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <!-- end bài viết -->
+
+                                        <!-- bài viết -->
+                                        <div class="px-4">
+                                             <div class="card mb-4 card-hover ">
+                                                  <div class="row">
+                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
+                                                            style="background-image: url(https://i1-dulich.vnecdn.net/2024/04/09/434055503-1281045616632828-259486760953399561-n-1-1_1712662737.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=lI_oFavcVwA1CMRi6rnU3A);"
+                                                            href="#">
+                                                       </a>
+                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
+                                                            <!-- Card Body -->
+                                                            <div class="card-body">
+                                                                 <a href="#"
+                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Du
+                                                                      lịch</a>
+                                                                 <h3 class="mb-2  "><a href="#"
+                                                                           class="text-inherit title_news">Hồ Sam Tạng -
+                                                                           địa điểm thư giãn gần Hà Nội</a></h3>
+                                                                 <p>
+                                                                      Nằm giữa những ngọn đồi bát úp, hồ Sam Tạng là
+                                                                      "viên ngọc thô" của Mai Châu, Hòa Bình với khung
+                                                                      cảnh hoang sơ, quanh năm xanh biếc.....
+                                                                 </p>
+
+                                                                 <div
+                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
+                                                                      <div class="d-flex-center gap-2">
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Tác giả"><i
+                                                                                     class="fe fe-user "></i>
+                                                                                VuDevWeb</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Ngày đăng"><i
+                                                                                     class="fe fe-calendar "></i>
+                                                                                24-4-2024</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Lượt xem"><i
+                                                                                     class="fe fe-eye "></i>
+                                                                                7.274</span>
+                                                                      </div>
+                                                                      <div class="">
+                                                                           <a href="#" class="text-muted bookmark">
+                                                                                <i class="fe fe-bookmark"></i>
+                                                                           </a>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <!-- end bài viết -->
+
+                                        <!-- bài viết -->
+                                        <div class="px-4">
+                                             <div class="card mb-4 card-hover ">
+                                                  <div class="row">
+                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
+                                                            style="background-image: url(https://i1-thethao.vnecdn.net/2024/04/21/2024-04-17T205119Z-10738195-MT-2713-9738-1713655000.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=h7AraGpJdIowOokJGgEPVg);"
+                                                            href="#">
+                                                       </a>
+                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
+                                                            <!-- Card Body -->
+                                                            <div class="card-body">
+                                                                 <a href="#"
+                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thể
+                                                                      thao</a>
+                                                                 <h3 class="mb-2  "><a href="#"
+                                                                           class="text-inherit title_news">Ancelotti:
+                                                                           'Không CĐV Real nào buồn vì phòng ngự trước
+                                                                           Man City'</a></h3>
+                                                                 <p>
+                                                                      HLV Carlo Ancelotti không phiền lòng khi Real
+                                                                      Madrid bị chỉ trích vì ưu tiên phòng ngự ở trận tứ
+                                                                      kết lượt về Champions League với Man City.....
+                                                                 </p>
+
+                                                                 <div
+                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
+                                                                      <div class="d-flex-center gap-2">
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Tác giả"><i
+                                                                                     class="fe fe-user "></i>
+                                                                                VuDevWeb</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Ngày đăng"><i
+                                                                                     class="fe fe-calendar "></i>
+                                                                                24-4-2024</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Lượt xem"><i
+                                                                                     class="fe fe-eye "></i>
+                                                                                7.274</span>
+                                                                      </div>
+                                                                      <div class="">
+                                                                           <a href="#" class="text-muted bookmark">
+                                                                                <i class="fe fe-bookmark"></i>
+                                                                           </a>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <!-- end bài viết -->
+
+                                        <!-- bài viết -->
+                                        <div class="px-4">
+                                             <div class="card mb-4 card-hover ">
+                                                  <div class="row">
+                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
+                                                            style="background-image: url(https://file1.dangcongsan.vn/data/0/images/2024/04/21/upload_2676/untitled5346450978578568-0659856.png);"
+                                                            href="#">
+                                                       </a>
+                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
+                                                            <!-- Card Body -->
+                                                            <div class="card-body">
+                                                                 <a href="#"
+                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thể
+                                                                      thao</a>
+                                                                 <h3 class="mb-2  "><a href="#"
+                                                                           class="text-inherit title_news">
+                                                                           Việt Nam vào tứ kết U23 châu Á sớm một
+                                                                           lượt</a></h3>
+                                                                 <p>
+                                                                      Tiền vệ Khuất Văn Khang ghi tuyệt phẩm sút phạt,
+                                                                      giúp Việt Nam thắng Malaysia 2-0, ở lượt hai bảng
+                                                                      D U23 châu Á 2024....
+                                                                 </p>
+
+                                                                 <div
+                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
+                                                                      <div class="d-flex-center gap-2">
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Tác giả"><i
+                                                                                     class="fe fe-user "></i>
+                                                                                VuDevWeb</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Ngày đăng"><i
+                                                                                     class="fe fe-calendar "></i>
+                                                                                24-4-2024</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Lượt xem"><i
+                                                                                     class="fe fe-eye "></i>
+                                                                                7.274</span>
+                                                                      </div>
+                                                                      <div class="">
+                                                                           <a href="#" class="text-muted bookmark">
+                                                                                <i class="fe fe-bookmark"></i>
+                                                                           </a>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <!-- end bài viết -->
+
+                                        <!-- bài viết -->
+                                        <div class="px-4">
+                                             <div class="card mb-4 card-hover ">
+                                                  <div class="row">
+                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
+                                                            style="background-image: url(https://cdnphoto.dantri.com.vn/bL1gb_nzZ7jjyKSJrBRrZfR5Ues=/zoom/774_516/2024/04/21/quang-donggetty11zon-crop-1713687314056.jpeg);"
+                                                            href="#">
+                                                       </a>
+                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
+                                                            <!-- Card Body -->
+                                                            <div class="card-body">
+                                                                 <a href="#"
+                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thế
+                                                                      giới</a>
+                                                                 <h3 class="mb-2  "><a href="#"
+                                                                           class="text-inherit title_news">Trung Quốc
+                                                                           phát cảnh báo lũ lụt khẩn cấp ở Quảng
+                                                                           Đông</a></h3>
+                                                                 <p>
+                                                                      Các con sông, hồ chứa lớn ở Quảng Đông, Trung Quốc
+                                                                      đang đe dọa gây ra lũ lụt nguy hiểm, buộc chính
+                                                                      quyền địa phương ngày 21/4 phải ban hành kế hoạch
+                                                                      ứng phó khẩn cấp để bảo vệ hơn 127 triệu người...
+                                                                 </p>
+
+                                                                 <div
+                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
+                                                                      <div class="d-flex-center gap-2">
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Tác giả"><i
+                                                                                     class="fe fe-user "></i>
+                                                                                VuDevWeb</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Ngày đăng"><i
+                                                                                     class="fe fe-calendar "></i>
+                                                                                24-4-2024</span>
+                                                                           <div class="vr"></div>
+                                                                           <span class="icon_news"
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="bottom"
+                                                                                title="Lượt xem"><i
+                                                                                     class="fe fe-eye "></i>
+                                                                                7.274</span>
+                                                                      </div>
+                                                                      <div class="">
+                                                                           <a href="#" class="text-muted bookmark">
+                                                                                <i class="fe fe-bookmark"></i>
+                                                                           </a>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <!-- end bài viết -->
+                                   </div>
+                                   <div class="card-footer d-flex-center">
+                                        <button class="btn btn-danger">
+                                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                             <span >Loading...</span>
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- danh mục -->
+                         <div class="col-12 col-lg-4">
+                              <div class="card mb-4">
+                                   <div class="card-header" style="border-bottom: none; padding-bottom: 0 !important;">
+                                        <div class="blog-posts-title title-wrap">
+                                             <h2 class="title">Bài nổi bật</h2>
+                                        </div>
+                                   </div>
+                                   <div class="card-body" style="padding-top: 0 !important;">
+                                        <div class="row">
+                                             <div class="col-12">
+                                                  <!-- Card -->
+                                                  <div class="card mb-4  shadow-lg">
+                                                       <a href="blog-single.html" class="card-img-top">
+                                                            <!-- Img  -->
+                                                            <img src="/assets/images/blog/blogpost-3.jpg"
+                                                                 class="card-img-top rounded-top-md" alt="blogpost"></a>
+                                                       <!-- Card body -->
+                                                       <div class="card-body">
+                                                            <a href="#"
+                                                                 class="fs-5 mb-2 fw-semibold d-block text-success">Courses</a>
+                                                            <h3><a href="blog-single.html" class="text-inherit">
+                                                                      How to become modern Stack Developer in 2020
+                                                                 </a>
+                                                            </h3>
+                                                            <p>Lorem ipsum dolor sit amet, accu msan in, tempor dictum
+                                                                 nequrem ipsum...</p>
+                                                            <!-- Media content -->
+                                                            <div class="row align-items-center g-0 mt-4">
+                                                                 <div class="col-auto">
+                                                                      <img src="/assets/images/avatar/avatar-7.jpg"
+                                                                           alt="avatar"
+                                                                           class="rounded-circle avatar-sm me-2">
+                                                                 </div>
+                                                                 <div class="col lh-1">
+                                                                      <h5 class="mb-1">Reva Yokk</h5>
+                                                                      <p class="fs-6 mb-0">September 05, 2020</p>
+                                                                 </div>
+                                                                 <div class="col-auto">
+                                                                      <p class="fs-6 mb-0">20 Min Read</p>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="card mb-4">
+                                   <div class="card-header" style="border-bottom: none; padding-bottom: 0 !important;">
+                                        <div class="blog-posts-title title-wrap">
+                                             <h2 class="title">Danh mục</h2>
+                                        </div>
+                                   </div>
+                                   <div class="card-body" style="padding-top: 0 !important;">
+                                        <ul class="list-unstyled mb-0 nav nav-x-0 flex-column">
+                                             <li class="lh-lg mb-1">
+                                                  <i class="fe fe-arrow-right text-muted"></i>
+                                                  <a href="#" class="text-link d-inline">
+                                                       Business</a>
+                                             </li>
+                                             <li class="lh-lg mb-1">
+                                                  <i class="fe fe-arrow-right text-muted"></i>
+                                                  <a href="#" class="text-link d-inline">
+                                                       Marketing</a>
+                                             </li>
+                                             <li class="lh-lg mb-1">
+                                                  <i class="fe fe-arrow-right text-muted"></i>
+                                                  <a href="#" class="text-link d-inline">
+                                                       Courses</a>
+                                             </li>
+                                             <li class="lh-lg mb-1">
+                                                  <i class="fe fe-arrow-right text-muted"></i>
+                                                  <a href="#" class="text-link d-inline">
+                                                       Dashboard</a>
+                                             </li>
+                                             <li class="lh-lg mb-1">
+                                                  <i class="fe fe-arrow-right text-muted"></i>
+                                                  <a href="#" class="text-link d-inline">
+                                                       Landings</a>
+                                             </li>
+                                             <li class="lh-lg mb-1">
+                                                  <i class="fe fe-arrow-right text-muted"></i>
+                                                  <a href="#" class="text-link d-inline">
+                                                       E-commerce</a>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+
+                              <div class="card">
+                                   <div class="card-header" style="border-bottom: none; padding-bottom: 0 !important;">
+                                        <div class="blog-posts-title title-wrap">
+                                             <h2 class="title">Thẻ nổi bật</h2>
+                                        </div>
+                                   </div>
+                                   <div class="card-body" style="padding-top: 0 !important;">
+                                        <div class="mt-3">
+                                             <a href="#" class="btn btn-light btn-xs mb-2">business</a>
+                                             <a href="#" class="btn btn-light btn-xs  mb-2">e-commerce</a>
+                                             <a href="#" class="btn btn-light btn-xs  mb-2">course</a>
+                                             <a href="#" class="btn btn-light btn-xs  mb-2">dashboard</a>
+                                             <a href="#" class="btn btn-light btn-xs  mb-2">landings</a>
+                                             <a href="#" class="btn btn-light btn-xs  mb-2">marketing</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- end content -->
+
+
+                    </div>
+          </article>
+          <!-- end content -->
+     </div>
+
+
+
+     <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+     <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="/assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+
+     <script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+     <script src="/assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+     <script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+
+
+     <script src="/assets/js/theme.min.js"></script>
+     <script src="/assets/js/vendors/sidebarMenu.js"></script>
+     <script src="/assets/libs/prismjs/prism.js"></script>
+     <script src="/assets/libs/prismjs/components/prism-scss.min.js"></script>
+     <script src="/assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+     <script src="/assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+     <script src="/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+     <script src="/assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+     <script src="/assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+     <script src="/assets/js/vendors/tnsSlider.js"></script>
+     <script src="/assets/js/vendors/tooltip.js"></script>
+
+</body>
+
+</html>

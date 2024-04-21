@@ -1,0 +1,131 @@
+:root {
+     --color_by_vu: #ff3d00;
+}
+.hover-post,.img-post {
+     transition: .4s ease-in-out;
+}
+.hover-post:hover .img-post{
+     transform: scale(1.05);
+     transition: .4s ease-in-out;
+}
+.title_new_banner {
+     font-size: 200% !important;
+     font-weight: 900;
+     color: white;
+     transition: .3s ease-in-out;
+}
+.title_new_banner:hover {
+     color: var(--color_by_vu);
+     transition: .3s ease-in-out;
+}
+.shadow_new_banner{
+     position: relative;
+     border-radius: 10px !important;
+     overflow: hidden;
+}
+.shadow_new_banner::before {
+     position: absolute;
+     width: 100%;
+     height: 50%;
+     bottom: 0;
+     content: "";
+     background-image: -moz-linear-gradient(-90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.01) 0%, black 100%) !important;
+     background-image: -ms-linear-gradient(-90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.01) 0%, black 100%) !important; 
+     background-image: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.01) 0%, black 100%) !important;
+}
+
+.carousel-caption_vd {
+     bottom: 1.25rem;
+     color: #fff;
+     left: 5%;
+     padding-bottom: -1.25rem;
+     padding-top: 1.25rem;
+     position: absolute;
+     right: 5%;
+     text-align: start;
+}
+.carousel-caption_vd .title_new_banner {
+     font-size: 20px !important; 
+}
+.carousel-caption_vd p {
+     margin-bottom: 0 !important;
+}
+
+/* title all post */
+.title-wrap {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     float: left;
+     width: 100%;
+     line-height: 1;
+     padding: 0 0 15px;
+     margin: 0 0 20px;
+     border-bottom: 2px solid #ebebeb;
+}
+.title-wrap:after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 40px;
+     height: 3px;
+     background-color: var(--color_by_vu);
+     margin: 0 0 -2.5px;
+}
+
+.title-wrap > h2 {
+     font-weight: 700;
+     margin: 0;
+}
+
+.title-wrap > a.more {
+     font-size: 15px;
+     color: #aaaaaa;
+     line-height: 16px;
+     padding: 0;
+     transition: .3s ease-in-out;
+
+}
+
+.title-wrap > a.more:hover {
+     color: var(--color_by_vu);
+     transition: .3s ease-in-out;
+
+}
+/* end all post */
+
+/* bài post */
+.text-loaiTin {
+     color: var(--color_by_vu);
+}
+.title_news:hover, .icon_news:hover {
+     cursor: pointer;
+     color: var(--color_by_vu);
+     transition: .3s ease-in-out;
+}
+
+.text-link:hover {
+     color: var(--color_by_vu);
+}
+
+/* end bài post */
+@media screen and (max-width: 900px) {
+     .title_new_banner {
+          font-size: 100% !important;
+     }
+     .carousel-caption {
+          padding-bottom: 0 !important;
+     }
+
+     .news-img {
+          height: 200px;
+          /* border-radius: 0 !important; */
+          border-radius: 10px !important;
+     }
+
+     .news-post-res {
+          padding: 0 !important;
+     }
+}

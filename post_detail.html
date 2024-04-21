@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/assets/css/my_cus.css">
+     <link rel="shortcut icon" href="/assets/images/logo/logo_vd.svg" type="image/x-icon">
+     <!-- Libs CSS -->
+     <link href="/assets/fonts/feather/feather.css" rel="stylesheet">
+     <link href="/assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+     <link href="/assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+     <link href="/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+     <link href="/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+     <!-- Theme CSS -->
+     <link rel="stylesheet" href="/assets/css/theme.min.css">
+     <link href="/assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="/assets/libs/tiny-slider/dist/tiny-slider.css">
+     <title>VuDevWeb</title>
+</head>
+
+<body>
+     <!-- header -->
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNAVBAR" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-2">
+                    <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Docs</a>
+                    </li>
+
+               </ul>
+               <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+               </form>
+          </div>
+     </div>
+     <nav class="navbar navbar-expand-lg NavBar_wrapper__4m3K5">
+          <!-- Button -->
+          <div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNAVBAR"
+                    aria-controls="offcanvasNAVBAR">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+          </div>
+          <div class="NavBar_logo__Rgo-5">
+               <a class="navbar-brand" href="index.html"><img src="/assets/images/logo/logo_vd.svg" alt=""
+                         class="rounded" width=38></a>
+               <span>VuDevWeb</span>
+          </div>
+          <div class="NavBar_body__4Yhth d-flex-center">
+               <div>
+                    <div class="Search_wrapper__Bwvae d-flex-center" aria-expanded="false">
+                         <div class="Search_searchIcon__-23JY"></div>
+                         <input class="Search_input__GnMba" spellcheck="false"
+                              placeholder="Tìm kiếm khóa học, bài viết, video, ..." value="">
+                    </div>
+               </div>
+          </div>
+
+          <div class="NavBar_actions__nSNzo">
+               <div class="ms-auto d-flex align-items-center order-lg-3">
+                    <ul class="navbar-nav navbar-right-wrap mx-2 flex-row">
+                         <li class="dropdown d-inline-block stopevent position-static">
+                              <a class="btn btn-light btn-icon rounded-circle text-muted indicator indicator-primary"
+                                   href="#" role="button" id="dropdownNotificationSecond" data-bs-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                   <i class="fe fe-bell"> </i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg position-absolute mx-3 my-5"
+                                   aria-labelledby="dropdownNotificationSecond">
+                                   <div>
+                                        <div
+                                             class="border-bottom px-3 pb-3 d-flex justify-content-between align-items-center">
+                                             <span class="h5 mb-0">Thông báo</span>
+                                             <a href="# " class="text-muted"><span class="align-middle"><i
+                                                            class="fe fe-settings me-1"></i></span></a>
+                                        </div>
+                                        <ul class="list-group list-group-flush  " style="height: 300px;" data-simplebar>
+                                             <li class="list-group-item bg-light">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-1.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Kristin Watson:</h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                Krisitn Watsan like your comment on
+                                                                                course
+                                                                                Javascript Introduction!
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-thumbs-up text-success me-1"></span>2
+                                                                                     hours ago,</span>
+                                                                                <span class="ms-1">2:19 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+
+                                                            <a href="#" class="badge-dot bg-info"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as read">
+                                                            </a>
+                                                            <div>
+                                                                 <a href="#" class="bg-transparent"
+                                                                      data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                      title="Remove">
+                                                                      <i class="fe fe-x text-muted"></i>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-2.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Brooklyn Simmons
+                                                                           </h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                Just launched a new Courses React for
+                                                                                Beginner.
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                     9,</span>
+                                                                                <span class="ms-1">1:20 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+                                                            <a href="#" class="badge-dot bg-secondary"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as unread">
+                                                            </a>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-3.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Jenny Wilson</h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                Krisitn Watsan like your comment on
+                                                                                course
+                                                                                Javascript Introduction!
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-thumbs-up text-info me-1"></span>Oct
+                                                                                     9,</span>
+                                                                                <span class="ms-1">1:56 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+                                                            <a href="#" class="badge-dot bg-secondary"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as unread">
+                                                            </a>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <a class="text-body" href="#">
+                                                                 <div class="d-flex">
+                                                                      <img src="/assets/images/avatar/avatar-4.jpg"
+                                                                           alt="" class="avatar-md rounded-circle">
+                                                                      <div class="ms-3">
+                                                                           <h5 class="fw-bold mb-1">Sina Ray</h5>
+                                                                           <p class="mb-3 text-body">
+                                                                                You earn new certificate for complete
+                                                                                the Javascript
+                                                                                Beginner course.
+                                                                           </p>
+                                                                           <span class="fs-6 text-muted">
+                                                                                <span><span
+                                                                                          class="fe fe-award text-warning me-1"></span>Oct
+                                                                                     9,</span>
+                                                                                <span class="ms-1">1:56 PM</span>
+                                                                           </span>
+                                                                      </div>
+                                                                 </div>
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-auto text-center me-2">
+                                                            <a href="#" class="badge-dot bg-secondary"
+                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                 title="Mark as unread">
+                                                            </a>
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                        </ul>
+                                        <div class="border-top px-3 pt-3 pb-0">
+                                             <a href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/notification-history.html"
+                                                  class="text-link fw-semibold">See
+                                                  all Notifications</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+
+                         <li class="dropdown ms-2 d-inline-block position-static">
+                              <a class="rounded-circle" href="#" data-bs-toggle="dropdown" data-bs-display="static"
+                                   aria-expanded="false">
+                                   <div class="avatar avatar-md avatar-indicators avatar-online">
+                                        <img alt="avatar" src="/assets/images/avatar/avatar-1.jpg"
+                                             class="rounded-circle">
+                                   </div>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end position-absolute mx-3 my-5">
+                                   <div class="dropdown-item">
+                                        <div class="d-flex">
+                                             <div class="avatar avatar-md avatar-indicators avatar-online">
+                                                  <img alt="avatar" src="/assets/images/avatar/avatar-1.jpg"
+                                                       class="rounded-circle">
+                                             </div>
+                                             <div class="ms-3 lh-1">
+                                                  <h5 class="mb-1">Annette Black</h5>
+                                                  <p class="mb-0 text-muted">annette@geeksui.com</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="dropdown-divider"></div>
+                                   <ul class="list-unstyled">
+                                        <li class="dropdown-submenu dropstart-lg">
+                                             <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                                  <i class="fe fe-circle me-2"></i>Status
+                                             </a>
+                                             <ul class="dropdown-menu">
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-success me-2"></span>Online
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-secondary me-2"></span>Offline
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-warning me-2"></span>Away
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a class="dropdown-item" href="#">
+                                                            <span class="badge-dot bg-danger me-2"></span>Busy
+                                                       </a>
+                                                  </li>
+                                             </ul>
+                                        </li>
+                                        <li>
+                                             <a class="dropdown-item" href="pages/profile-edit.html">
+                                                  <i class="fe fe-user me-2"></i>Profile
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a class="dropdown-item" href="pages/student-subscriptions.html">
+                                                  <i class="fe fe-star me-2"></i>Subscription
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a class="dropdown-item" href="#">
+                                                  <i class="fe fe-settings me-2"></i>Settings
+                                             </a>
+                                        </li>
+                                   </ul>
+                                   <div class="dropdown-divider"></div>
+                                   <ul class="list-unstyled">
+                                        <li>
+                                             <a class="dropdown-item" href="index.html">
+                                                  <i class="fe fe-power me-2"></i>Sign Out
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </li>
+                    </ul>
+
+               </div>
+          </div>
+
+     </nav>
+
+     <!-- end header -->
+
+
+     <div class="main_all">
+          <!-- header -->
+          <div class="App_sidebarWrap__3LwsB" style="background-color:#FFFFFF;">
+               <div class="Sidebar_wrapper__kUJFm" id="sidebar">
+                    <ul class="Sidebar_list__HnCzM">
+                         <li>
+                              <a aria-current="page" class="Sidebar_itemBtn__Q78b7 active" href="/">
+                                   <i class="fe fe-home icon_sidebar"></i>
+                                   <span>Trang chủ</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a class="Sidebar_itemBtn__Q78b7" href="/sport">
+                                   <i class="bi bi-newspaper icon_sidebar"></i>
+                                   <span>Thể thao</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a class="Sidebar_itemBtn__Q78b7" href="/me/stored/courses">
+                                   <i class="bi bi-newspaper icon_sidebar"></i>
+                                   <span>Chính trị</span>
+                              </a>
+                         </li>
+
+                         <li>
+                              <a class="Sidebar_itemBtn__Q78b7" href="/blog">
+                                   <i class="bi bi-archive-fill icon_sidebar"></i>
+                                   <span>Giải trí</span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+          <!-- end sidebar -->
+
+          <!-- content -->
+          <div class="App_withSidebarContent__o4VlQ">
+               <div class="container-fluid mt-3">
+
+                    <div class="card mb-4 card-hover  ">
+                         <div class="row g-0">
+                              <!-- Image -->
+                              <a href="blog-single.html" class="col-lg-8 col-md-12 col-12 bg-cover img-left-rounded"
+                                   style="background-image: url(../assets/images/blog/blogpost-2.jpg);">
+                                   <img src="../assets/images/blog/blogpost-2.jpg" class="img-fluid d-lg-none invisible"
+                                        alt=""></a>
+                              <div class="col-lg-4 col-md-12 col-12">
+                                   <!-- Card Body -->
+                                   <div class="card-body">
+                                        <a href="#" class="badge bg-warning mb-3">Courses</a>
+                                        <h1 class="mb-4"> <a href="blog-single.html" class="text-inherit">
+                                                  Getting started the Web App JavaScript in 2020
+                                             </a>
+                                        </h1>
+                                        <p>Our features, journey, tips and us being us. Lorem ipsum dolor sit amet,
+                                             accumsan
+                                             in, tempor dictum neque.
+                                        </p>
+                                        <!-- Media Content -->
+                                        <div class="row align-items-center g-0 mt-7">
+                                             <div class="col-auto">
+                                                  <img src="../assets/images/avatar/avatar-6.jpg" alt=""
+                                                       class="rounded-circle avatar-sm me-2">
+                                             </div>
+                                             <div class="col lh-1 ">
+                                                  <h5 class="mb-1">Dustin Warren</h5>
+                                                  <p class="fs-6 mb-0">September 13, 2020</p>
+                                             </div>
+                                             <div class="col-auto">
+                                                  <p class="fs-6 mb-0">6 Min Read</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="card mb-4 border ">
+                         <div class="card-body p-4">
+                              <h3>Tags</h3>
+                              <div class="mt-3">
+                                   <a href="#" class="btn btn-light btn-xs mb-2">business</a>
+                                   <a href="#" class="btn btn-light btn-xs  mb-2">e-commerce</a>
+                                   <a href="#" class="btn btn-light btn-xs  mb-2">course</a>
+                                   <a href="#" class="btn btn-light btn-xs  mb-2">dashboard</a>
+                                   <a href="#" class="btn btn-light btn-xs  mb-2">landings</a>
+                                   <a href="#" class="btn btn-light btn-xs  mb-2">marketing</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!-- end content -->
+     </div>
+
+
+
+     <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+     <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="/assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+
+     <script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+     <script src="/assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+     <script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+
+
+     <script src="/assets/js/theme.min.js"></script>
+     <script src="/assets/js/vendors/sidebarMenu.js"></script>
+     <script src="/assets/libs/prismjs/prism.js"></script>
+     <script src="/assets/libs/prismjs/components/prism-scss.min.js"></script>
+     <script src="/assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+     <script src="/assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+     <script src="/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+     <script src="/assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+     <script src="/assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+     <script src="/assets/js/vendors/tnsSlider.js"></script>
+     <script src="/assets/js/vendors/tooltip.js"></script>
+
+</body>
+
+</html>

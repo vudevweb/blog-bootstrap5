@@ -1,0 +1,179 @@
+:root {
+    --color_by_vu: #ff3d00;
+}
+
+.container_cus {
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 0 44px 74px;
+}
+
+.NavBar_wrapper__4m3K5 {
+    align-items: center;
+    border-bottom: 1px solid #e8ebed;
+    display: flex;
+    left: 0;
+    padding: 0 28px;
+    position: -webkit-sticky;
+    position: sticky !important;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    height: 66px;
+}
+
+.NavBar_actions__nSNzo, .NavBar_body__4Yhth, .NavBar_logo__Rgo-5 {
+    flex: 1 1;
+}
+.NavBar_logo__Rgo-5 {
+    align-items: center;
+    display: flex;
+}
+
+.d-flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Search_wrapper__Bwvae {
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    flex: 1 1;
+    height: 40px;
+    padding: 0 16px 0 8px;
+    transition: border-color .2s ease-in-out;
+    width: 420px;
+}
+.Search_searchIcon__-23JY {
+    background-color: #fff;
+    background-image: url(https://fullstack.edu.vn/static/media/search.9bd3926522ea0937310c.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    border-radius: 50%;
+    height: 32px;
+    opacity: .7;
+    transition: opacity .2s ease-in-out;
+    width: 30px;
+}
+
+.Search_input__GnMba {
+    border: none;
+    caret-color: #444;
+    flex: 1 1;
+    height: 100%;
+    outline: none;
+    padding: 0 4px;
+    background-color: transparent;
+}
+
+.NavBar_actions__nSNzo {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-toggler {
+    border: none !important;
+}
+
+
+/* sidebar */
+.main_all {
+    display: flex;
+    min-height: 100vh;
+}
+.Sidebar_wrapper__kUJFm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    left: 0;
+    padding: 0 8px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 74px;
+    width:  96px;
+    z-index: 8;
+}
+
+.CreateButton_wrapper__Bb6o6 {
+    align-items: center;
+    background-color: #1473e6;
+    border-color: #1473e6;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    margin: 8px 0 2px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 44px;
+}
+
+.Sidebar_list__HnCzM {
+    padding-left: 0;
+}
+.Sidebar_list__HnCzM li {
+    list-style: none;
+}
+.Sidebar_itemBtn__Q78b7 span {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.Sidebar_itemBtn__Q78b7 {
+    align-items: center;
+    border-radius: 16px;
+    color: #404040;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+    justify-content: center;
+    margin-top: 4px;
+    width: 72px;
+    transition: .3s ease-in-out;
+}
+
+.Sidebar_itemBtn__Q78b7.active {
+    background-color: #e8ebed;
+    color: var(--color_by_vu);
+    transition: .3s ease-in-out;
+}
+
+.Sidebar_itemBtn__Q78b7:hover {
+    background-color: #e8ebed;
+    color: var(--color_by_vu);
+    transition: .3s ease-in-out;
+
+}
+.icon_sidebar {
+    font-size: 20px;
+}
+.App_withSidebarContent__o4VlQ{
+    max-width: calc(100% - 96px);
+    /* padding: 0 20px 0 20px; */
+    flex: 1 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .NavBar_body__4Yhth {
+        display: none;
+    }
+    .NavBar_logo__Rgo-5 {
+        display: none;
+    }
+    .App_sidebarWrap__3LwsB {
+        display: none;
+    }
+    .main_all {
+        display: block;
+    }
+    .App_withSidebarContent__o4VlQ {
+        padding: 0;
+        max-width:100%
+    }
+}
