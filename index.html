@@ -89,11 +89,23 @@
                <span>VuDevWeb</span>
           </div>
           <div class="NavBar_body__4Yhth d-flex-center">
-               <div>
+               <div class="search_form">
                     <div class="Search_wrapper__Bwvae d-flex-center" aria-expanded="false">
-                         <div class="Search_searchIcon__-23JY"></div>
-                         <input class="Search_input__GnMba" spellcheck="false"
-                              placeholder="Tìm kiếm khóa học, bài viết, video, ..." value="">
+                         <div class="Search_searchIcon__-23JY">
+                         </div>
+                         <input class="Search_input__GnMba" id="search_on" spellcheck="false"
+                              placeholder="Tìm kiếm bài viết, video, ..." value="">
+                    </div>
+                    <div class="search_out card card-body p-0" id="search_out">
+                         <div class="search_header" id="search_header">
+                             <!-- render status từ api -->
+                         </div>
+                         <div class="search_heading">
+                              <h5>BÀI VIẾT</h5>
+                              <a class="text-vd" href="#">Xem thêm</a></div>
+                         <div class="search_result" id="search_result">
+                              <!-- render bài viết từ api -->
+                         </div>
                     </div>
                </div>
           </div>
@@ -350,7 +362,7 @@
 
 
      <div class="main_all">
-          <!-- header -->
+          <!-- sidebar -->
           <div class="App_sidebarWrap__3LwsB shadow" style="background-color:#FFFFFF;">
                <div class="Sidebar_wrapper__kUJFm" id="sidebar">
                     <ul class="Sidebar_list__HnCzM">
@@ -522,323 +534,224 @@
                                              <h2 class="title">Có gì mới</h2><a class="more" href="#">Xem thêm</a>
                                         </div>
                                    </div>
-                                   <div class="card-body" style="padding-top: 0 !important;">
+                                   <div class="card-body row" style="padding-top: 0 !important;">
                                         <!-- bài viết -->
-                                        <div class="px-4">
-                                             <div class="card mb-4 card-hover ">
-                                                  <div class="row">
-                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
-                                                            style="background-image: url(https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA);"
-                                                            href="#">
-                                                       </a>
-                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
-                                                            <!-- Card Body -->
-                                                            <div class="card-body">
-                                                                 <a href="#"
-                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thể
-                                                                      thao</a>
-                                                                 <h3 class="mb-2  "><a href="#"
-                                                                           class="text-inherit title_news">Giáo viên Mỹ
-                                                                           gốc Việt lần đầu thử thách 21km ở giải chạy
-                                                                           VM Huế</a></h3>
-                                                                 <p>
-                                                                      Lauren Thị Hudson chưa từng tham gia giải chạy nào
-                                                                      nhưng vẫn quyết tâm thử sức với cự ly half
-                                                                      marathon của VM Huế, đặt mục tiêu về đích trong
-                                                                      top 20......
-                                                                 </p>
-
-                                                                 <div
-                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
-                                                                      <div class="d-flex-center gap-2">
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Tác giả"><i
-                                                                                     class="fe fe-user "></i>
-                                                                                VuDevWeb</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Ngày đăng"><i
-                                                                                     class="fe fe-calendar "></i>
-                                                                                24-4-2024</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Lượt xem"><i
-                                                                                     class="fe fe-eye "></i>
-                                                                                7.274</span>
-                                                                      </div>
-                                                                      <div class="">
-                                                                           <a href="#" class="text-muted bookmark">
-                                                                                <i class="fe fe-bookmark"></i>
-                                                                           </a>
-                                                                      </div>
-                                                                 </div>
-
-                                                                 <div>
-                                                                 </div>
-                                                            </div>
+                                        <div class="col-12 col-md-6 col-lg-6 mb-10">
+                                             <div class="mb-3">
+                                                  <a href="#!">
+                                                       <!-- img -->
+                                                       <div class="img-zoom">
+                                                            <img src="https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA"
+                                                                 alt="" class="img-fluid w-100">
                                                        </div>
+                                                  </a>
+                                             </div>
+                                             <!-- text -->
+                                             <div class="mb-2"><a href="#!" class="text-loaiTin">Thể thao</a></div>
+                                             <!-- text -->
+                                             <div>
+                                                  <h2 class="h5"><a href="/post_detail.html    "
+                                                            class="text-inherit title_news">Giáo viên Mỹ gốc
+                                                            Việt lần đầu thử thách 21km ở giải chạy VM Huế</a></h2>
+                                                  <p>Lauren Thị Hudson chưa từng tham gia giải chạy nào nhưng vẫn
+                                                       quyết tâm thử sức với cự ly half marathon của VM Huế, đặt
+                                                       mục tiêu về đích trong top 20......</p>
+                                                  <div class="d-flex justify-content-between text-muted mt-4">
+                                                       <span> <span class="icon_news" data-bs-toggle="tooltip"
+                                                                 data-placement="bottom" title="Ngày đăng"><i
+                                                                      class="fe fe-calendar "></i>
+                                                                 24-4-2024</span></span>
+                                                       <span>
+                                                            <small>
+                                                                 Thời gian đọc:
+                                                                 <span class="text-dark fw-bold">12 phút</span>
+                                                            </small>
+                                                       </span>
                                                   </div>
                                              </div>
                                         </div>
                                         <!-- end bài viết -->
 
                                         <!-- bài viết -->
-                                        <div class="px-4">
-                                             <div class="card mb-4 card-hover ">
-                                                  <div class="row">
-                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
-                                                            style="background-image: url(https://i1-dulich.vnecdn.net/2024/04/09/434055503-1281045616632828-259486760953399561-n-1-1_1712662737.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=lI_oFavcVwA1CMRi6rnU3A);"
-                                                            href="#">
-                                                       </a>
-                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
-                                                            <!-- Card Body -->
-                                                            <div class="card-body">
-                                                                 <a href="#"
-                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Du
-                                                                      lịch</a>
-                                                                 <h3 class="mb-2  "><a href="#"
-                                                                           class="text-inherit title_news">Hồ Sam Tạng -
-                                                                           địa điểm thư giãn gần Hà Nội</a></h3>
-                                                                 <p>
-                                                                      Nằm giữa những ngọn đồi bát úp, hồ Sam Tạng là
-                                                                      "viên ngọc thô" của Mai Châu, Hòa Bình với khung
-                                                                      cảnh hoang sơ, quanh năm xanh biếc.....
-                                                                 </p>
-
-                                                                 <div
-                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
-                                                                      <div class="d-flex-center gap-2">
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Tác giả"><i
-                                                                                     class="fe fe-user "></i>
-                                                                                VuDevWeb</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Ngày đăng"><i
-                                                                                     class="fe fe-calendar "></i>
-                                                                                24-4-2024</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Lượt xem"><i
-                                                                                     class="fe fe-eye "></i>
-                                                                                7.274</span>
-                                                                      </div>
-                                                                      <div class="">
-                                                                           <a href="#" class="text-muted bookmark">
-                                                                                <i class="fe fe-bookmark"></i>
-                                                                           </a>
-                                                                      </div>
-                                                                 </div>
-
-                                                                 <div>
-                                                                 </div>
-                                                            </div>
+                                        <div class="col-12 col-md-6 col-lg-6 mb-10">
+                                             <div class="mb-3">
+                                                  <a href="#!">
+                                                       <!-- img -->
+                                                       <div class="img-zoom">
+                                                            <img src="https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA"
+                                                                 alt="" class="img-fluid w-100">
                                                        </div>
+                                                  </a>
+                                             </div>
+                                             <!-- text -->
+                                             <div class="mb-2"><a href="#!" class="text-loaiTin">Thể thao</a></div>
+                                             <!-- text -->
+                                             <div>
+                                                  <h2 class="h5"><a href="/post_detail.html    "
+                                                            class="text-inherit title_news">Giáo viên Mỹ gốc
+                                                            Việt lần đầu thử thách 21km ở giải chạy VM Huế</a></h2>
+                                                  <p>Lauren Thị Hudson chưa từng tham gia giải chạy nào nhưng vẫn
+                                                       quyết tâm thử sức với cự ly half marathon của VM Huế, đặt
+                                                       mục tiêu về đích trong top 20......</p>
+                                                  <div class="d-flex justify-content-between text-muted mt-4">
+                                                       <span> <span class="icon_news" data-bs-toggle="tooltip"
+                                                                 data-placement="bottom" title="Ngày đăng"><i
+                                                                      class="fe fe-calendar "></i>
+                                                                 24-4-2024</span></span>
+                                                       <span>
+                                                            <small>
+                                                                 Thời gian đọc:
+                                                                 <span class="text-dark fw-bold">12 phút</span>
+                                                            </small>
+                                                       </span>
                                                   </div>
                                              </div>
                                         </div>
                                         <!-- end bài viết -->
 
                                         <!-- bài viết -->
-                                        <div class="px-4">
-                                             <div class="card mb-4 card-hover ">
-                                                  <div class="row">
-                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
-                                                            style="background-image: url(https://i1-thethao.vnecdn.net/2024/04/21/2024-04-17T205119Z-10738195-MT-2713-9738-1713655000.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=h7AraGpJdIowOokJGgEPVg);"
-                                                            href="#">
-                                                       </a>
-                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
-                                                            <!-- Card Body -->
-                                                            <div class="card-body">
-                                                                 <a href="#"
-                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thể
-                                                                      thao</a>
-                                                                 <h3 class="mb-2  "><a href="#"
-                                                                           class="text-inherit title_news">Ancelotti:
-                                                                           'Không CĐV Real nào buồn vì phòng ngự trước
-                                                                           Man City'</a></h3>
-                                                                 <p>
-                                                                      HLV Carlo Ancelotti không phiền lòng khi Real
-                                                                      Madrid bị chỉ trích vì ưu tiên phòng ngự ở trận tứ
-                                                                      kết lượt về Champions League với Man City.....
-                                                                 </p>
-
-                                                                 <div
-                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
-                                                                      <div class="d-flex-center gap-2">
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Tác giả"><i
-                                                                                     class="fe fe-user "></i>
-                                                                                VuDevWeb</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Ngày đăng"><i
-                                                                                     class="fe fe-calendar "></i>
-                                                                                24-4-2024</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Lượt xem"><i
-                                                                                     class="fe fe-eye "></i>
-                                                                                7.274</span>
-                                                                      </div>
-                                                                      <div class="">
-                                                                           <a href="#" class="text-muted bookmark">
-                                                                                <i class="fe fe-bookmark"></i>
-                                                                           </a>
-                                                                      </div>
-                                                                 </div>
-
-                                                                 <div>
-                                                                 </div>
-                                                            </div>
+                                        <div class="col-12 col-md-6 col-lg-6 mb-10">
+                                             <div class="mb-3">
+                                                  <a href="#!">
+                                                       <!-- img -->
+                                                       <div class="img-zoom">
+                                                            <img src="https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA"
+                                                                 alt="" class="img-fluid w-100">
                                                        </div>
+                                                  </a>
+                                             </div>
+                                             <!-- text -->
+                                             <div class="mb-2"><a href="#!" class="text-loaiTin">Thể thao</a></div>
+                                             <!-- text -->
+                                             <div>
+                                                  <h2 class="h5"><a href="/post_detail.html    "
+                                                            class="text-inherit title_news">Giáo viên Mỹ gốc
+                                                            Việt lần đầu thử thách 21km ở giải chạy VM Huế</a></h2>
+                                                  <p>Lauren Thị Hudson chưa từng tham gia giải chạy nào nhưng vẫn
+                                                       quyết tâm thử sức với cự ly half marathon của VM Huế, đặt
+                                                       mục tiêu về đích trong top 20......</p>
+                                                  <div class="d-flex justify-content-between text-muted mt-4">
+                                                       <span> <span class="icon_news" data-bs-toggle="tooltip"
+                                                                 data-placement="bottom" title="Ngày đăng"><i
+                                                                      class="fe fe-calendar "></i>
+                                                                 24-4-2024</span></span>
+                                                       <span>
+                                                            <small>
+                                                                 Thời gian đọc:
+                                                                 <span class="text-dark fw-bold">12 phút</span>
+                                                            </small>
+                                                       </span>
                                                   </div>
                                              </div>
                                         </div>
                                         <!-- end bài viết -->
 
                                         <!-- bài viết -->
-                                        <div class="px-4">
-                                             <div class="card mb-4 card-hover ">
-                                                  <div class="row">
-                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
-                                                            style="background-image: url(https://file1.dangcongsan.vn/data/0/images/2024/04/21/upload_2676/untitled5346450978578568-0659856.png);"
-                                                            href="#">
-                                                       </a>
-                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
-                                                            <!-- Card Body -->
-                                                            <div class="card-body">
-                                                                 <a href="#"
-                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thể
-                                                                      thao</a>
-                                                                 <h3 class="mb-2  "><a href="#"
-                                                                           class="text-inherit title_news">
-                                                                           Việt Nam vào tứ kết U23 châu Á sớm một
-                                                                           lượt</a></h3>
-                                                                 <p>
-                                                                      Tiền vệ Khuất Văn Khang ghi tuyệt phẩm sút phạt,
-                                                                      giúp Việt Nam thắng Malaysia 2-0, ở lượt hai bảng
-                                                                      D U23 châu Á 2024....
-                                                                 </p>
-
-                                                                 <div
-                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
-                                                                      <div class="d-flex-center gap-2">
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Tác giả"><i
-                                                                                     class="fe fe-user "></i>
-                                                                                VuDevWeb</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Ngày đăng"><i
-                                                                                     class="fe fe-calendar "></i>
-                                                                                24-4-2024</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Lượt xem"><i
-                                                                                     class="fe fe-eye "></i>
-                                                                                7.274</span>
-                                                                      </div>
-                                                                      <div class="">
-                                                                           <a href="#" class="text-muted bookmark">
-                                                                                <i class="fe fe-bookmark"></i>
-                                                                           </a>
-                                                                      </div>
-                                                                 </div>
-
-                                                                 <div>
-                                                                 </div>
-                                                            </div>
+                                        <div class="col-12 col-md-6 col-lg-6 mb-10">
+                                             <div class="mb-3">
+                                                  <a href="#!">
+                                                       <!-- img -->
+                                                       <div class="img-zoom">
+                                                            <img src="https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA"
+                                                                 alt="" class="img-fluid w-100">
                                                        </div>
+                                                  </a>
+                                             </div>
+                                             <!-- text -->
+                                             <div class="mb-2"><a href="#!" class="text-loaiTin">Thể thao</a></div>
+                                             <!-- text -->
+                                             <div>
+                                                  <h2 class="h5"><a href="/post_detail.html    "
+                                                            class="text-inherit title_news">Giáo viên Mỹ gốc
+                                                            Việt lần đầu thử thách 21km ở giải chạy VM Huế</a></h2>
+                                                  <p>Lauren Thị Hudson chưa từng tham gia giải chạy nào nhưng vẫn
+                                                       quyết tâm thử sức với cự ly half marathon của VM Huế, đặt
+                                                       mục tiêu về đích trong top 20......</p>
+                                                  <div class="d-flex justify-content-between text-muted mt-4">
+                                                       <span> <span class="icon_news" data-bs-toggle="tooltip"
+                                                                 data-placement="bottom" title="Ngày đăng"><i
+                                                                      class="fe fe-calendar "></i>
+                                                                 24-4-2024</span></span>
+                                                       <span>
+                                                            <small>
+                                                                 Thời gian đọc:
+                                                                 <span class="text-dark fw-bold">12 phút</span>
+                                                            </small>
+                                                       </span>
                                                   </div>
                                              </div>
                                         </div>
                                         <!-- end bài viết -->
 
                                         <!-- bài viết -->
-                                        <div class="px-4">
-                                             <div class="card mb-4 card-hover ">
-                                                  <div class="row">
-                                                       <a class="news-post-res news-img col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
-                                                            style="background-image: url(https://cdnphoto.dantri.com.vn/bL1gb_nzZ7jjyKSJrBRrZfR5Ues=/zoom/774_516/2024/04/21/quang-donggetty11zon-crop-1713687314056.jpeg);"
-                                                            href="#">
-                                                       </a>
-                                                       <div class="news-post-res col-lg-9 col-md-12 col-12">
-                                                            <!-- Card Body -->
-                                                            <div class="card-body">
-                                                                 <a href="#"
-                                                                      class="fs-5 mb-2 fw-semibold d-block text-loaiTin">Thế
-                                                                      giới</a>
-                                                                 <h3 class="mb-2  "><a href="#"
-                                                                           class="text-inherit title_news">Trung Quốc
-                                                                           phát cảnh báo lũ lụt khẩn cấp ở Quảng
-                                                                           Đông</a></h3>
-                                                                 <p>
-                                                                      Các con sông, hồ chứa lớn ở Quảng Đông, Trung Quốc
-                                                                      đang đe dọa gây ra lũ lụt nguy hiểm, buộc chính
-                                                                      quyền địa phương ngày 21/4 phải ban hành kế hoạch
-                                                                      ứng phó khẩn cấp để bảo vệ hơn 127 triệu người...
-                                                                 </p>
-
-                                                                 <div
-                                                                      class="d-none d-lg-flex align-items-center justify-content-between g-0">
-                                                                      <div class="d-flex-center gap-2">
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Tác giả"><i
-                                                                                     class="fe fe-user "></i>
-                                                                                VuDevWeb</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Ngày đăng"><i
-                                                                                     class="fe fe-calendar "></i>
-                                                                                24-4-2024</span>
-                                                                           <div class="vr"></div>
-                                                                           <span class="icon_news"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-placement="bottom"
-                                                                                title="Lượt xem"><i
-                                                                                     class="fe fe-eye "></i>
-                                                                                7.274</span>
-                                                                      </div>
-                                                                      <div class="">
-                                                                           <a href="#" class="text-muted bookmark">
-                                                                                <i class="fe fe-bookmark"></i>
-                                                                           </a>
-                                                                      </div>
-                                                                 </div>
-
-                                                                 <div>
-                                                                 </div>
-                                                            </div>
+                                        <div class="col-12 col-md-6 col-lg-6 mb-10">
+                                             <div class="mb-3">
+                                                  <a href="#!">
+                                                       <!-- img -->
+                                                       <div class="img-zoom">
+                                                            <img src="https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA"
+                                                                 alt="" class="img-fluid w-100">
                                                        </div>
+                                                  </a>
+                                             </div>
+                                             <!-- text -->
+                                             <div class="mb-2"><a href="#!" class="text-loaiTin">Thể thao</a></div>
+                                             <!-- text -->
+                                             <div>
+                                                  <h2 class="h5"><a href="/post_detail.html    "
+                                                            class="text-inherit title_news">Giáo viên Mỹ gốc
+                                                            Việt lần đầu thử thách 21km ở giải chạy VM Huế</a></h2>
+                                                  <p>Lauren Thị Hudson chưa từng tham gia giải chạy nào nhưng vẫn
+                                                       quyết tâm thử sức với cự ly half marathon của VM Huế, đặt
+                                                       mục tiêu về đích trong top 20......</p>
+                                                  <div class="d-flex justify-content-between text-muted mt-4">
+                                                       <span> <span class="icon_news" data-bs-toggle="tooltip"
+                                                                 data-placement="bottom" title="Ngày đăng"><i
+                                                                      class="fe fe-calendar "></i>
+                                                                 24-4-2024</span></span>
+                                                       <span>
+                                                            <small>
+                                                                 Thời gian đọc:
+                                                                 <span class="text-dark fw-bold">12 phút</span>
+                                                            </small>
+                                                       </span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <!-- end bài viết -->
+
+                                        <!-- bài viết -->
+                                        <div class="col-12 col-md-6 col-lg-6 mb-10">
+                                             <div class="mb-3">
+                                                  <a href="#!">
+                                                       <!-- img -->
+                                                       <div class="img-zoom">
+                                                            <img src="https://i1-thethao.vnecdn.net/2024/04/19/tk-00382-jpg-1713544305-8591-1713544325.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=jxV6FJ-c6FsatPRgEL4JWA"
+                                                                 alt="" class="img-fluid w-100">
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <!-- text -->
+                                             <div class="mb-2"><a href="#!" class="text-loaiTin">Thể thao</a></div>
+                                             <!-- text -->
+                                             <div>
+                                                  <h2 class="h5"><a href="/post_detail.html    "
+                                                            class="text-inherit title_news">Giáo viên Mỹ gốc
+                                                            Việt lần đầu thử thách 21km ở giải chạy VM Huế</a></h2>
+                                                  <p>Lauren Thị Hudson chưa từng tham gia giải chạy nào nhưng vẫn
+                                                       quyết tâm thử sức với cự ly half marathon của VM Huế, đặt
+                                                       mục tiêu về đích trong top 20......</p>
+                                                  <div class="d-flex justify-content-between text-muted mt-4">
+                                                       <span> <span class="icon_news" data-bs-toggle="tooltip"
+                                                                 data-placement="bottom" title="Ngày đăng"><i
+                                                                      class="fe fe-calendar "></i>
+                                                                 24-4-2024</span></span>
+                                                       <span>
+                                                            <small>
+                                                                 Thời gian đọc:
+                                                                 <span class="text-dark fw-bold">12 phút</span>
+                                                            </small>
+                                                       </span>
                                                   </div>
                                              </div>
                                         </div>
@@ -846,8 +759,9 @@
                                    </div>
                                    <div class="card-footer d-flex-center">
                                         <button class="btn btn-danger">
-                                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                                             <span >Loading...</span>
+                                             <span class="spinner-border spinner-border-sm" role="status"
+                                                  aria-hidden="true"></span>
+                                             <span>Loading...</span>
                                         </button>
                                    </div>
                               </div>
@@ -947,33 +861,37 @@
 
 
                     </div>
-          </article>
-          <!-- end content -->
-     </div>
+                    </article>
+                    <!-- end content -->
+               </div>
 
 
 
-     <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
-     <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="/assets/libs/simplebar/dist/simplebar.min.js"></script>
+               <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+               <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+               <script src="/assets/libs/simplebar/dist/simplebar.min.js"></script>
 
 
-     <script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-     <script src="/assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-     <script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+               <script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+               <script src="/assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+               <script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
 
 
-     <script src="/assets/js/theme.min.js"></script>
-     <script src="/assets/js/vendors/sidebarMenu.js"></script>
-     <script src="/assets/libs/prismjs/prism.js"></script>
-     <script src="/assets/libs/prismjs/components/prism-scss.min.js"></script>
-     <script src="/assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-     <script src="/assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-     <script src="/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
-     <script src="/assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
-     <script src="/assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
-     <script src="/assets/js/vendors/tnsSlider.js"></script>
-     <script src="/assets/js/vendors/tooltip.js"></script>
+               <script src="/assets/js/theme.min.js"></script>
+               <script src="/assets/js/vendors/sidebarMenu.js"></script>
+               <script src="/assets/libs/prismjs/prism.js"></script>
+               <script src="/assets/libs/prismjs/components/prism-scss.min.js"></script>
+               <script src="/assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+               <script src="/assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+               <script src="/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+               <script src="/assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+               <script src="/assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+               <script src="/assets/js/vendors/tnsSlider.js"></script>
+               <script src="/assets/js/vendors/tooltip.js"></script>
+               <script
+                    src="https://demo.bootstrap.news/bootnews/assets/vendor/smoothscroll-for-websites/SmoothScroll.js"></script>
+
+                    <script src="/assets/custom/search.js"></script>
 
 </body>
 

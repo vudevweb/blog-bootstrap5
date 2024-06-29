@@ -100,10 +100,13 @@
 .text-loaiTin {
      color: var(--color_by_vu);
 }
-.title_news:hover, .icon_news:hover {
-     cursor: pointer;
+.text-vd {
      color: var(--color_by_vu);
-     transition: .3s ease-in-out;
+}
+.title_news:hover, .icon_news:hover {
+     cursor: pointer !important;
+     color: var(--color_by_vu) !important; 
+     transition: .3s ease-in-out !important;
 }
 
 .text-link:hover {
@@ -129,3 +132,99 @@
           padding: 0 !important;
      }
 }
+
+.img-zoom {
+     border-radius: .5rem;
+     overflow: hidden;
+}
+
+.img-zoom img:hover {
+     transform: scale(1.1);
+ }
+
+ .img-zoom img {
+     transition: transform .5s ease;
+ }
+
+ /* sarch  */
+ .search_form {
+     position: relative;
+ }
+ @keyframes search_anm {
+     0% {
+          opacity: 0;
+          transform: translateY(-8px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+ }
+ .search_out {
+    box-shadow: 0 -4px 32px #0003;
+    transition: all ease-in-out .3s;
+    animation: search_anm ease .3s;
+     margin-top: 10px;
+     position: absolute;
+     width: 100%;
+     color:#0000008a;
+     padding: 12px 24px !important;
+     overflow-y: auto;
+     border-radius: 10px !important;
+     display: none;
+     max-height: 580px;
+     overflow-y: auto;
+ }
+ ::-webkit-scrollbar {
+     width: 10px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+     background: #f1f1f1; 
+   }
+    
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: #888; 
+     background-color: var(--color_by_vu);
+     border-radius: 10px;
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #ff3c0097; 
+   }
+ .search_out::w
+ .search_header {
+     display: flex;
+     align-items: center;
+ }
+ .search_header svg{
+     width: 15px ;
+     margin-right: 5px;
+ }
+
+ .search_heading {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    margin-bottom: 6px;
+ }
+ .search_result {
+
+ }
+ .search_result a {
+     padding-top: calc(var(--geeks-gutter-x)* .5);
+     padding-bottom: calc(var(--geeks-gutter-x)* .5);
+     transition: .3s ease-in-out;
+ }
+ .search_result a:hover{
+     background-color: #e96b6b3d;
+     border-radius: 10px;
+     transition: .3s ease-in-out;
+ }
+
+
