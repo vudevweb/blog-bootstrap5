@@ -150,6 +150,7 @@
  .search_form {
      position: relative;
  }
+ 
  @keyframes search_anm {
      0% {
           opacity: 0;
@@ -195,7 +196,7 @@
    ::-webkit-scrollbar-thumb:hover {
      background: #ff3c0097; 
    }
- .search_out::w
+
  .search_header {
      display: flex;
      align-items: center;
@@ -205,13 +206,18 @@
      margin-right: 5px;
  }
 
+ .search_header img{
+     width: 15px;
+     margin-right: 5px;
+ }
+
  .search_heading {
-     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 0 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
-    margin-bottom: 6px;
+     display: none;
+     align-items: center;
+     justify-content: space-between;
+     padding: 12px 0 0 12px;
+     border-bottom: 1px solid rgba(0, 0, 0, .05);
+     margin-bottom: 6px;
  }
  .search_result {
 

@@ -40,9 +40,9 @@
     border-radius: 20px;
     flex: 1 1;
     height: 40px;
-    padding: 0 16px 0 8px;
+    padding: 0 8px 0 8px;
     transition: border-color .2s ease-in-out;
-    width: 420px;
+    width: 450px;
 }
 .Search_searchIcon__-23JY {
     background-color: #fff;
@@ -55,6 +55,19 @@
     opacity: .7;
     transition: opacity .2s ease-in-out;
     width: 30px;
+}
+.Search_closeIcon {
+    background-color: #fff;
+    background-image: url(https://static-00.iconduck.com/assets.00/close-icon-2048x2047-22z7exfk.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    border-radius: 50%;
+    height: 18px;
+    opacity: .7;
+    transition: opacity .2s ease-in-out;
+    width: 16px;
+    display: none;
 }
 
 .Search_input__GnMba {

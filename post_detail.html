@@ -75,6 +75,7 @@
                </form>
           </div>
      </div>
+
      <nav class="navbar navbar-expand-lg NavBar_wrapper__4m3K5">
           <!-- Button -->
           <div>
@@ -89,11 +90,26 @@
                <span>VuDevWeb</span>
           </div>
           <div class="NavBar_body__4Yhth d-flex-center">
-               <div>
+               <div class="search_form">
                     <div class="Search_wrapper__Bwvae d-flex-center" aria-expanded="false">
-                         <div class="Search_searchIcon__-23JY"></div>
-                         <input class="Search_input__GnMba" spellcheck="false"
-                              placeholder="Tìm kiếm khóa học, bài viết, video, ..." value="">
+                         <div class="Search_searchIcon__-23JY">
+                         </div>
+                         <input class="Search_input__GnMba" id="search_on" spellcheck="false"
+                              placeholder="Tìm kiếm bài viết, video, ..." value="">
+                         <div class="Search_closeIcon" id="search_close">
+                         </div>
+                    </div>
+                    <div class="search_out card card-body p-0" id="search_out">
+                         <div class="search_header" id="search_header">
+                              <!-- render status từ api -->
+                         </div>
+                         <div class="search_heading" id="search_heading">
+                              <h5>BÀI VIẾT</h5>
+                              <a class="text-vd" href="#">Xem thêm</a>
+                         </div>
+                         <div class="search_result" id="search_result">
+                              <!-- render bài viết từ api -->
+                         </div>
                     </div>
                </div>
           </div>
@@ -658,6 +674,7 @@
                <script src="/assets/js/vendors/tooltip.js"></script>
                <script
                     src="https://demo.bootstrap.news/bootnews/assets/vendor/smoothscroll-for-websites/SmoothScroll.js"></script>
+                    <script src="/assets/custom/search.js"></script>
 
 </body>
 
